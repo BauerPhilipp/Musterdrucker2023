@@ -1,0 +1,66 @@
+.body {
+    background-color: rgba(0, 0, 0, 255);
+}
+
+.header {
+    height: 12%;
+    background-color: rgb(150, 192, 92);
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+
+.statusbarTop {
+    height: 4%;
+    background-color: rgb(185, 66, 66);
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.mainSection {
+    height: 72%;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.mainSectionLinks {
+    width: 55%;
+    background-color: rgb(75, 152, 141);
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-left: 10px;
+    margin-right: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.mainSectionRechts {
+    width: 45%;
+    background-color: rgb(75, 152, 141);
+    margin-left: 5px;
+    margin-right: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.druckenButtonSection {
+    height: 8%;
+    background-color: rgb(91, 37, 81);
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.statusbarFooter {
+    height: 4%;
+    background-color: rgb(125, 74, 27);
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}

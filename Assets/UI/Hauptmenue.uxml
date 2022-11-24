@@ -1,0 +1,17 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/general_style.uss?fileID=7433441132597879392&amp;guid=af5491bfc2dce674b9de6586a96281ac&amp;type=3#general_style" />
+    <ui:VisualElement name="body" class="body" style="flex-grow: 1;">
+        <ui:VisualElement name="header" class="header" style="flex-direction: column;">
+            <ui:VisualElement style="height: 20%;" />
+            <ui:VisualElement style="height: 20%;" />
+            <ui:VisualElement style="flex-grow: 1;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="statusbarTop" class="statusbarTop" />
+        <ui:VisualElement name="mainSection" class="mainSection" style="flex-direction: row;">
+            <ui:VisualElement name="mainSectionLinks" class="mainSectionLinks" />
+            <ui:VisualElement name="mainSectionRechts" class="mainSectionRechts" />
+        </ui:VisualElement>
+        <ui:VisualElement name="druckenButtonSection" class="druckenButtonSection" />
+        <ui:VisualElement name="statusbarFooter" class="statusbarFooter" />
+    </ui:VisualElement>
+</ui:UXML>
