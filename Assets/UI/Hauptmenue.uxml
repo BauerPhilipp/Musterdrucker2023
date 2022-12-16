@@ -1,13 +1,81 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
     <Style src="project://database/Assets/UI/general_style.uss?fileID=7433441132597879392&amp;guid=af5491bfc2dce674b9de6586a96281ac&amp;type=3#general_style" />
+    <Style src="project://database/Assets/buttons_menueband.uss?fileID=7433441132597879392&amp;guid=a1f443529c46a524b945b23f30090444&amp;type=3#buttons_menueband" />
     <ui:VisualElement name="body" class="body" style="flex-grow: 1;">
-        <ui:VisualElement name="header" class="header" style="flex-direction: column;">
-            <ui:VisualElement style="height: 20%;" />
-            <ui:VisualElement style="height: 20%;" />
-            <ui:VisualElement style="flex-grow: 1;" />
+        <ui:VisualElement name="header" class="header" style="flex-direction: column; background-color: rgb(0, 8, 255);">
+            <ui:VisualElement name="top" style="height: 20%; flex-direction: row; justify-content: space-between; width: 100%; align-items: center; margin-top: 10px;">
+                <ui:VisualElement name="baer" style="width: 20%; align-items: flex-start; justify-content: center; flex-grow: 0; height: 100%;">
+                    <ui:VisualElement name="image" style="width: 58px; height: 100%; background-image: url(&apos;project://database/Assets/Sprites/Berndorf%20Icon.png?fileID=2800000&amp;guid=691680b163c8b5840a82b767c72f0e27&amp;type=3#Berndorf Icon&apos;); -unity-background-scale-mode: scale-to-fit; margin-left: 20px;" />
+                </ui:VisualElement>
+                <ui:VisualElement name="berndorfText" style="flex-grow: 1; color: rgb(255, 255, 255); height: 100%;">
+                    <ui:Label tabindex="-1" text="Berndorf Band Group" display-tooltip-when-elided="true" class="text" style="height: 100%; width: 100%; font-size: 38px; -unity-text-align: middle-center; -unity-font-style: bold;" />
+                </ui:VisualElement>
+                <ui:VisualElement name="windowButtons" style="width: 20%; flex-direction: row; align-items: center; justify-content: flex-end; padding-right: 20px;">
+                    <ui:Button tabindex="-1" display-tooltip-when-elided="true" name="buttonMin" class="windowButtons" style="align-items: center; justify-content: center;">
+                        <ui:VisualElement name="min" style="background-image: url(&apos;project://database/Assets/Sprites/Close_min_max/min.png?fileID=2800000&amp;guid=2632ff7cb10545047aaf5f04c7fc0e83&amp;type=3#min&apos;); flex-grow: 0; height: 10%; width: 100%; -unity-background-scale-mode: scale-to-fit; background-color: rgb(255, 255, 255);" />
+                    </ui:Button>
+                    <ui:Button tabindex="-1" display-tooltip-when-elided="true" name="buttonWindowed" class="windowButtons" style="align-items: center; justify-content: center;">
+                        <ui:VisualElement name="windowed" style="flex-grow: 0; height: 100%; width: 100%; background-image: url(&apos;project://database/Assets/Sprites/Close_min_max/Max.png?fileID=2800000&amp;guid=5a3f84ac0aed8bc49a4154e26f967c0e&amp;type=3#Max&apos;);" />
+                    </ui:Button>
+                    <ui:Button tabindex="-1" display-tooltip-when-elided="true" name="buttonClose" class="windowButtons" style="height: 30px; width: 30px;">
+                        <ui:VisualElement name="close" style="flex-grow: 0; height: 100%; width: 100%; background-image: url(&apos;project://database/Assets/Sprites/Close_min_max/Close.png?fileID=2800000&amp;guid=1890788595baf9f48ad0227940a64248&amp;type=3#Close&apos;); align-items: center; justify-content: center;" />
+                    </ui:Button>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="menueSwitchButton" style="flex-direction: row; height: 15%;">
+                <ui:VisualElement name="hauptmenue" style="border-left-width: 0; border-right-width: 0; border-top-width: 0; border-bottom-width: 0; border-left-color: rgb(255, 0, 0); border-right-color: rgb(255, 0, 0); border-top-color: rgb(255, 0, 0); border-bottom-color: rgb(255, 0, 0); background-color: rgb(255, 255, 255); color: rgb(11, 0, 255); align-items: center; justify-content: center; height: 100%; width: 6%;">
+                    <ui:Label tabindex="-1" text="Hauptmenü" display-tooltip-when-elided="true" name="labelHauptmenue" style="font-size: 22px; -unity-font-style: bold;" />
+                </ui:VisualElement>
+                <ui:VisualElement name="platzhalter" style="border-left-width: 0; border-right-width: 0; border-top-width: 0; border-bottom-width: 0; border-left-color: rgb(255, 0, 0); border-right-color: rgb(255, 0, 0); border-top-color: rgb(255, 0, 0); border-bottom-color: rgb(255, 0, 0); background-color: rgba(255, 255, 255, 0); color: rgb(255, 255, 255); align-items: center; justify-content: center; height: 100%; width: 7%; -unity-text-align: upper-center;">
+                    <ui:Label tabindex="-1" text="Administrator Menü" display-tooltip-when-elided="true" name="labelHauptmenue" style="font-size: 22px; -unity-font-style: bold; -unity-text-align: upper-center;" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="buttonMenueband" style="flex-grow: 1; background-color: rgb(255, 255, 255); flex-direction: row; align-items: center; height: 60%; justify-content: space-between;">
+                <ui:VisualElement name="Buttons" style="flex-direction: row;">
+                    <ui:Button tabindex="-1" text="&#10;" display-tooltip-when-elided="true" name="menuebandButton01" class="menuebuttons_general">
+                        <ui:VisualElement name="image" class="menuebuttons_image" />
+                        <ui:Label tabindex="-1" text="Verbinden" display-tooltip-when-elided="true" name="text" class="menuebuttons_text" />
+                    </ui:Button>
+                    <ui:Button tabindex="-1" text="&#10;" display-tooltip-when-elided="true" name="menuebandButton02" class="menuebuttons_general">
+                        <ui:VisualElement name="image" class="menuebuttons_image" style="background-image: url(&apos;project://database/Assets/Sprites/Menueband/Drucken%20Icon.png?fileID=2800000&amp;guid=5854a0516df8f46489375aad716aa887&amp;type=3#Drucken Icon&apos;);" />
+                        <ui:Label tabindex="-1" text="Drucken" display-tooltip-when-elided="true" name="text" class="menuebuttons_text" />
+                    </ui:Button>
+                    <ui:Button tabindex="-1" text="&#10;" display-tooltip-when-elided="true" name="menuebandButton03" class="menuebuttons_general">
+                        <ui:VisualElement name="image" class="menuebuttons_image" style="background-image: url(&apos;project://database/Assets/Sprites/Menueband/Manuelle%20Maschinenbedienung.png?fileID=2800000&amp;guid=4c6fb06e649d45c40a76788a7754ca30&amp;type=3#Manuelle Maschinenbedienung&apos;);" />
+                        <ui:Label tabindex="-1" text="Manuelle&#10;Maschinenbedienung" display-tooltip-when-elided="true" name="text" class="menuebuttons_text" />
+                    </ui:Button>
+                    <ui:Button tabindex="-1" text="&#10;" display-tooltip-when-elided="true" name="menuebandButton04" class="menuebuttons_general">
+                        <ui:VisualElement name="image" class="menuebuttons_image" style="background-image: url(&apos;project://database/Assets/Sprites/Menueband/Bildverarbeitung.png?fileID=2800000&amp;guid=b40051202a9304b40950db1714f5c901&amp;type=3#Bildverarbeitung&apos;);" />
+                        <ui:Label tabindex="-1" text="Bildverarbeitung" display-tooltip-when-elided="true" name="text" class="menuebuttons_text" />
+                    </ui:Button>
+                    <ui:VisualElement name="trenner" class="trenner" />
+                    <ui:Button tabindex="-1" text="&#10;" display-tooltip-when-elided="true" name="menuebandButton05" class="menuebuttons_general">
+                        <ui:VisualElement name="image" class="menuebuttons_image" style="background-image: url(&apos;project://database/Assets/Sprites/Menueband/Benutzer%20wechseln.png?fileID=2800000&amp;guid=753358033cf34a049a44a126d13193fd&amp;type=3#Benutzer wechseln&apos;);" />
+                        <ui:Label tabindex="-1" text="Benutzer&#10;wechseln" display-tooltip-when-elided="true" name="text" class="menuebuttons_text" />
+                    </ui:Button>
+                    <ui:Button tabindex="-1" text="&#10;" display-tooltip-when-elided="true" name="menuebandButton06" class="menuebuttons_general">
+                        <ui:VisualElement name="image" class="menuebuttons_image" style="background-image: url(&apos;project://database/Assets/Vorlagen/Benutzer%20verwaltung.psd?fileID=2800000&amp;guid=76c0420d225f91d4a959c7fd91e73d95&amp;type=3#Benutzer verwaltung&apos;);" />
+                        <ui:Label tabindex="-1" text="Benutzer&#10;verwaltung" display-tooltip-when-elided="true" name="text" class="menuebuttons_text" />
+                    </ui:Button>
+                    <ui:VisualElement name="trenner" class="trenner" />
+                    <ui:Button tabindex="-1" text="&#10;" display-tooltip-when-elided="true" name="menuebandButton06" class="menuebuttons_general">
+                        <ui:VisualElement name="image" class="menuebuttons_image" style="background-image: url(&apos;project://database/Assets/Sprites/Menueband/Info.png?fileID=2800000&amp;guid=3b036e86dd3b97c4f9cb073d9827f5d6&amp;type=3#Info&apos;);" />
+                        <ui:Label tabindex="-1" text="Info" display-tooltip-when-elided="true" name="text" class="menuebuttons_text" />
+                    </ui:Button>
+                    <ui:Button tabindex="-1" text="&#10;" display-tooltip-when-elided="true" name="menuebandButton06" class="menuebuttons_general">
+                        <ui:VisualElement name="image" class="menuebuttons_image" style="background-image: url(&apos;project://database/Assets/Sprites/Menueband/Lizenzen.png?fileID=2800000&amp;guid=aaf2298b6888db649beaa97b7d91e576&amp;type=3#Lizenzen&apos;);" />
+                        <ui:Label tabindex="-1" text="Lizenzen" display-tooltip-when-elided="true" name="text" class="menuebuttons_text" />
+                    </ui:Button>
+                    <ui:Button tabindex="-1" text="&#10;" display-tooltip-when-elided="true" name="menuebandButton06" class="menuebuttons_general">
+                        <ui:VisualElement name="image" class="menuebuttons_image" style="background-image: url(&apos;project://database/Assets/Sprites/Menueband/Dokumentation.png?fileID=2800000&amp;guid=790e55bd3b9a2df488dc846688214015&amp;type=3#Dokumentation&apos;);" />
+                        <ui:Label tabindex="-1" text="Dokumentation" display-tooltip-when-elided="true" name="text" class="menuebuttons_text" />
+                    </ui:Button>
+                </ui:VisualElement>
+                <ui:VisualElement name="BBGLogo" style="align-items: center; justify-content: center; background-image: url(&apos;project://database/Assets/Sprites/00_Berndorf%20Band%20Group%20800x256px.png?fileID=2800000&amp;guid=32e5db82360bc4e4e8907464c978d5a7&amp;type=3#00_Berndorf Band Group 800x256px&apos;); width: 10%; height: 100%; -unity-background-scale-mode: scale-to-fit;" />
+            </ui:VisualElement>
         </ui:VisualElement>
         <ui:VisualElement name="statusbarTop" class="statusbarTop" />
-        <ui:VisualElement name="mainSection" class="mainSection" style="flex-direction: row;">
+        <ui:VisualElement name="mainSection" class="mainSection" style="flex-direction: row; height: auto; flex-grow: 1;">
             <ui:VisualElement name="mainSectionLinks" class="mainSectionLinks" />
             <ui:VisualElement name="mainSectionRechts" class="mainSectionRechts" />
         </ui:VisualElement>
