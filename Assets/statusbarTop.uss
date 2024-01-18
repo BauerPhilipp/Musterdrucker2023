@@ -1,0 +1,32 @@
+.label {
+    color: rgba(0, 0, 0, 255);
+    font-size: 22px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 70%;
+    align-items: center;
+    justify-content: center;
+    -unity-text-align: middle-center;
+}
+
+.rahmen {
+    border-left-color: rgba(125, 123, 123, 255);
+    border-right-color: rgba(125, 123, 123, 255);
+    border-top-color: rgba(125, 123, 123, 255);
+    border-bottom-color: rgba(125, 123, 123, 255);
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    height: 70%;
+    -unity-text-align: middle-center;
+    align-items: center;
+    justify-content: center;
+}
+
+.anzeigeText {
+    color: rgba(0, 0, 0, 255);
+    -unity-text-align: middle-center;
+}

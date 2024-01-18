@@ -1,8 +1,9 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
     <Style src="project://database/Assets/UI/general_style.uss?fileID=7433441132597879392&amp;guid=af5491bfc2dce674b9de6586a96281ac&amp;type=3#general_style" />
     <Style src="project://database/Assets/buttons_menueband.uss?fileID=7433441132597879392&amp;guid=a1f443529c46a524b945b23f30090444&amp;type=3#buttons_menueband" />
+    <Style src="project://database/Assets/statusbarTop.uss?fileID=7433441132597879392&amp;guid=1ffd23426127be7489ffb14818ef9890&amp;type=3#statusbarTop" />
     <ui:VisualElement name="body" class="body" style="flex-grow: 1;">
-        <ui:VisualElement name="header" class="header" style="flex-direction: column; background-color: rgb(0, 8, 255);">
+        <ui:VisualElement name="header" class="header" style="flex-direction: column; background-color: rgb(0, 8, 255); flex-grow: 0;">
             <ui:VisualElement name="top" style="height: 20%; flex-direction: row; justify-content: space-between; width: 100%; align-items: center; margin-top: 10px;">
                 <ui:VisualElement name="baer" style="width: 20%; align-items: flex-start; justify-content: center; flex-grow: 0; height: 100%;">
                     <ui:VisualElement name="image" style="width: 58px; height: 100%; background-image: url(&apos;project://database/Assets/Sprites/Berndorf%20Icon.png?fileID=2800000&amp;guid=691680b163c8b5840a82b767c72f0e27&amp;type=3#Berndorf Icon&apos;); -unity-background-scale-mode: scale-to-fit; margin-left: 20px;" />
@@ -30,10 +31,10 @@
                     <ui:Label tabindex="-1" text="Administrator Menü" display-tooltip-when-elided="true" name="labelHauptmenue" style="font-size: 22px; -unity-font-style: bold; -unity-text-align: upper-center;" />
                 </ui:VisualElement>
             </ui:VisualElement>
-            <ui:VisualElement name="buttonMenueband" style="flex-grow: 1; background-color: rgb(255, 255, 255); flex-direction: row; align-items: center; height: 60%; justify-content: space-between;">
+            <ui:VisualElement name="buttonMenueband" style="flex-grow: 0; background-color: rgb(255, 255, 255); flex-direction: row; align-items: center; height: 60%; justify-content: space-between; width: 100%;">
                 <ui:VisualElement name="Buttons" style="flex-direction: row;">
                     <ui:Button tabindex="-1" text="&#10;" display-tooltip-when-elided="true" name="menuebandButton01" class="menuebuttons_general">
-                        <ui:VisualElement name="image" class="menuebuttons_image" />
+                        <ui:VisualElement name="image" class="menuebuttons_image" style="background-image: url(&apos;project://database/Assets/Sprites/Menueband/Verbinden%20Icon.png?fileID=2800000&amp;guid=e3fe0be77d63df246af3bd3701e818a6&amp;type=3#Verbinden Icon&apos;);" />
                         <ui:Label tabindex="-1" text="Verbinden" display-tooltip-when-elided="true" name="text" class="menuebuttons_text" />
                     </ui:Button>
                     <ui:Button tabindex="-1" text="&#10;" display-tooltip-when-elided="true" name="menuebandButton02" class="menuebuttons_general">
@@ -74,7 +75,17 @@
                 <ui:VisualElement name="BBGLogo" style="align-items: center; justify-content: center; background-image: url(&apos;project://database/Assets/Sprites/00_Berndorf%20Band%20Group%20800x256px.png?fileID=2800000&amp;guid=32e5db82360bc4e4e8907464c978d5a7&amp;type=3#00_Berndorf Band Group 800x256px&apos;); width: 10%; height: 100%; -unity-background-scale-mode: scale-to-fit;" />
             </ui:VisualElement>
         </ui:VisualElement>
-        <ui:VisualElement name="statusbarTop" class="statusbarTop" />
+        <ui:VisualElement name="statusbarTop" class="statusbarTop" style="flex-direction: row; justify-content: space-between; background-color: rgb(188, 188, 188);">
+            <ui:VisualElement name="Links" style="flex-direction: row; width: 20%;">
+                <ui:VisualElement name="Endzeit" style="align-items: center; justify-content: center; flex-direction: row;">
+                    <ui:Label tabindex="-1" text="Endzeit:" display-tooltip-when-elided="true" class="label" />
+                    <ui:VisualElement name="Anzeigebox" class="rahmen">
+                        <ui:Label tabindex="-1" text="Label" display-tooltip-when-elided="true" class="anzeigeText" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="rechts" style="width: 70%;" />
+        </ui:VisualElement>
         <ui:VisualElement name="mainSection" class="mainSection" style="flex-direction: row; height: auto; flex-grow: 1;">
             <ui:VisualElement name="mainSectionLinks" class="mainSectionLinks" />
             <ui:VisualElement name="mainSectionRechts" class="mainSectionRechts" />

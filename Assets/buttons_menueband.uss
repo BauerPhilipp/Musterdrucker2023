@@ -1,5 +1,5 @@
 .menuebuttons_general {
-    width: 210px;
+    width: auto;
     height: 130px;
     align-items: center;
     margin-left: 2px;
@@ -15,6 +15,10 @@
     border-top-color: rgba(0, 0, 0, 0);
     border-bottom-color: rgba(0, 0, 0, 0);
     background-color: rgba(0, 0, 0, 0);
+    flex-basis: auto;
+    flex-grow: 1;
+    flex-direction: column;
+    min-width: 180px;
 }
 
 .menuebuttons_image {
@@ -32,6 +36,8 @@
     margin-bottom: 0;
     -unity-slice-top: 0;
     -unity-slice-left: 0;
+    flex-grow: 1;
+    flex-basis: auto;
 }
 
 .menuebuttons_text {
@@ -41,8 +47,10 @@
     -unity-text-align: lower-center;
     padding-top: 8px;
     color: rgb(0, 0, 0);
-    font-size: 20px;
+    font-size: 21px;
     -unity-font-style: bold;
+    white-space: nowrap;
+    align-items: center;
 }
 
 .trenner {
